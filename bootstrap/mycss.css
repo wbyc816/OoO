@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?u07p7d');
+    src:    url('fonts/icomoon.eot?u07p7d#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?u07p7d') format('truetype'),
+        url('fonts/icomoon.woff?u07p7d') format('woff'),
+        url('fonts/icomoon.svg?u07p7d#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+    content: "\e900";
+}
+.icon-social:before {
+    content: "\e900";
+}
+.icon-facebook:before {
+    content: "\ea90";
+}
+.icon-twitter:before {
+    content: "\ea96";
+}
+.icon-youtube:before {
+    content: "\e901";
+}
+.wrap{
+	padding: 0px!important;
+}
+.mynav{
+	background-color: transparent;
+	border:none;
+
+	height: 120px;
+	padding:60px 80px 0px 80px;
+}
+.brand-content{
+	color: white;
+	font-size:70px;
+}
+.navright-a{
+	font-size:15px;
+	color: white;
+	padding-left:0px!important;
+	padding-right:0px!important;
+}
+.navright-a:hover{
+	color:#00BAF2!important;
+	border-bottom: 2px solid #00BAF2;    
+	-webkit-transition: border-bottom-style 2s ease-in-out;
+	-o-transition: border-bottom-style 2s ease-in-out;
+	transition: border-bottom-style 2s ease-in-out;
+}
+.navright-button{
+	padding: 0px!important;
+}
+.navright>li{
+	padding-left:35px;
+	padding-right:35px;
+}
+.navright-a-button{
+	width: 130px;
+	height: 39px;
+	margin-top:8px;
+	font-size:15px;
+}
+
+.imagebg{
+	position: relative;
+	height: 760px;
+}
+.imagehide{
+	width: 100%;
+	top: 0;
+	position:absolute;
+	opacity: 0;
+	z-index: 3;
+}
+.introduce{
+	position: relative;
+    margin:0 auto;
+    padding-top: 250px;
+    width: 800px;
+    z-index: 4;
+}
+.introduce p{
+	font-size: 60px;
+	color: white;
+	font-weight:400;
+}
+.btn-play{
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin:0 auto;
+	border: 1px solid white;
+	border-radius: 50%;
+    padding: 23px 0;
+    cursor:pointer;
+    overflow:hidden;
+}
+.btn-play-text{
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	left:25px;
+	transition: left 400ms ease-in-out 10ms;
+}
+.btn-play-icon{
+	color: #ffffff;
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    left: 80px;
+    top:5px;
+    transition: left 400ms ease-in-out 10ms;
+}
+.btn-play:hover .btn-play-text{
+	left:-80px;
+	transition: left 400ms ease-in-out 10ms;
+}
+.btn-play:hover .btn-play-icon{
+	left:-16px;
+	transition: left 400ms ease-in-out 10ms;
+}
+@media (min-width: 768px) {
+	.navbutton {
+		display: none;
+	}
+}
+.detail{
+	padding:20px;
+}
+.features{
+	height: 379px;
+	background: #373D40;
+	text-align: center;
+	color: white;
+	padding-top: 60px
+}
+.features h3{
+    font-size: 
+}
+.features p{
+	width: 50%;
+	margin:0 auto;
+	padding-top: 20px;
+	font-size: 17px;
+}
+h1{
+	font-size: 40px;
+}
+.carousel-tab{
+	height: 400px;
+	background-color: #EDF1F2;
+	margin-top: 20px;
+}
+.showpage{
+	height: 250px;
+	background:bottom center no-repeat url(../sucai/back1.png);
+	padding-top: 70px;
+}
+.showpage a{
+	color: #000000;
+	text-decoration:none;
+	text-align: center;
+	display: block;
+    font-size: 40px;
+}
+.showpage a:hover{
+    color: #000000;
+}
+.showpage a h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+.carousel-head{
+	height: 125px;
+	background: #ffffff;
+	overflow:hidden;
+
+}
+.carousel-head ul{
+	text-align: center;
+	padding:0;
+	position: relative;
+}
+.carousel-head li{
+	width: 20%;
+	height: 125px;
+	line-height: 125px;
+	font-size:20px;
+	cursor:pointer;
+	position:absolute;
+	z-index: 3;
+	color: black;
+	list-style: none;
+}
+.carousel-head .active{
+	color:#00BAF2;
+}
+.cycle{
+	position:absolute;
+	z-index: 3;
+}
+
+.list1{ 
+	margin: 200px -90px 200px -20px;
+	padding-left:40px;
+}
+.list2{
+	margin: 200px -20px 160px -90px;
+	padding-right:40px; 
+}
+.p-grey{
+	color: #818688;
+	line-height: 1.5em;
+}
+.p-black{
+	color:black;
+    line-height: 1.5em;
+}
+hr {
+	border-top: 1px solid #555555;
+}
+.quick-look{
+	padding:80px 0px;
+}
+.quick-look>p{
+	font-size: 50px;
+}
+.ql-left{
+	text-align: right;
+}
+.quick-look .container{
+	margin-top:80px;
+}
+.ql-p{
+	padding: 40px 40px;
+}
+.ql-p span{
+	color:#00BAF2;
+	font-size: 40px;
+}
+.iphone{
+	background-image: url("../sucai/appBACKground.png");
+	background-repeat: no-repeat;
+	height: 716px;
+	position: relative;
+}
+.apphide{
+	
+	top: 103px;
+	left: 49px;
+	position:absolute;
+	opacity: 0;
+	z-index: 3;
+}
+.bottom-div{
+	width:100%;
+	height: 700px;
+	background-image: url("../sucai/image6.jpg");
+	background-repeat: repeat-x;
+	background-size: cover;
+	padding-top: 150px;
+}
+.work {
+	font-size: 40px;
+	color: white;
+}
+.buy-now{
+	width: 150px;
+	height: 50px;
+}
+.nav-bottom{
+	padding-top: 70px;
+	padding-bottom: 60px;
+	margin-bottom: 0px;
+	border-radius: 0;
+}
+.navbottom-a{
+	font-size: 15px;
+	padding-bottom:7px; 
+	color: #ffffff!important;
+}
+.navbottom-a:hover{
+	color:#00BAF2!important;
+	border-bottom: 2px solid #00BAF2;
+	text-decoration: none;  
+	-webkit-transition: border-bottom-style 2s ease-in-out;
+	-o-transition: border-bottom-style 2s ease-in-out;
+	transition: border-bottom-style 2s ease-in-out;
+}
+footer{
+	width: 100%;
+	height:320px;
+	background-color: #373D40;
+	padding-top: 90px;
+}
+.footer-a a{
+	color: #B8C1C3;
+	font-size: 35px;
+	margin: 0 10px;
+}
+.footer-a a:hover{
+	text-decoration: none;
+}
+.footer-p{
+	color: #B8C1C3;
+	font-size: 15px;
+	margin-top: 40px;
+}
+.yh-suspects{
+	border-left: 1px solid;
+}
+.yh-suspects-tab a{
+	color: black;
+}
