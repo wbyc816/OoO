@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?u07p7d');
-    src:    url('fonts/icomoon.eot?u07p7d#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?u07p7d') format('truetype'),
-        url('fonts/icomoon.woff?u07p7d') format('woff'),
-        url('fonts/icomoon.svg?u07p7d#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?u07p7d');
+    src:    url('../fonts/icomoon.eot?u07p7d#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?u07p7d') format('truetype'),
+        url('../fonts/icomoon.woff?u07p7d') format('woff'),
+        url('../fonts/icomoon.svg?u07p7d#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -80,7 +80,7 @@
 	font-size:15px;
 }
 
-.imagebg{
+.image-background{
 	position: relative;
 	height: 760px;
 }
@@ -91,14 +91,14 @@
 	opacity: 0;
 	z-index: 3;
 }
-.introduce{
+.video-introduction{
 	position: relative;
     margin:0 auto;
     padding-top: 250px;
     width: 800px;
     z-index: 4;
 }
-.introduce p{
+.video-introduction p{
 	font-size: 60px;
 	color: white;
 	font-weight:400;
@@ -146,7 +146,7 @@
 		display: none;
 	}
 }
-.detail{
+.content{
 	padding:20px;
 }
 .features{
@@ -155,9 +155,6 @@
 	text-align: center;
 	color: white;
 	padding-top: 60px
-}
-.features h3{
-    font-size: 
 }
 .features p{
 	width: 50%;
@@ -175,7 +172,7 @@ h1{
 }
 .showpage{
 	height: 250px;
-	background:bottom center no-repeat url(../sucai/back1.png);
+	background:bottom center no-repeat url("../imgs/back1.png");
 	padding-top: 70px;
 }
 .showpage a{
@@ -244,9 +241,6 @@ hr {
 .quick-look{
 	padding:80px 0px;
 }
-.quick-look>p{
-	font-size: 50px;
-}
 .ql-left{
 	text-align: right;
 }
@@ -261,7 +255,7 @@ hr {
 	font-size: 40px;
 }
 .iphone{
-	background-image: url("../sucai/appBACKground.png");
+	background-image: url("../imgs/appBACKground.png");
 	background-repeat: no-repeat;
 	height: 716px;
 	position: relative;
@@ -277,7 +271,7 @@ hr {
 .bottom-div{
 	width:100%;
 	height: 700px;
-	background-image: url("../sucai/image6.jpg");
+	background-image: url("../imgs/image6.jpg");
 	background-repeat: repeat-x;
 	background-size: cover;
 	padding-top: 150px;
@@ -327,6 +321,7 @@ footer{
 	color: #B8C1C3;
 	font-size: 15px;
 	margin-top: 40px;
+	padding-right: 100px;
 }
 .yh-suspects{
 	border-left: 1px solid;

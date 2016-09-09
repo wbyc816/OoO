@@ -1,18 +1,21 @@
 $(window).on("load", function() {
-    window.onscroll = function() {
-        scrollnav();
-    }
-    imagechange("imagebg");
-    imagechange("iphone");
-    carouseltab();
-    var red=[222,81,69];
-    var blue=[44,191,230];
-    cyclebig("red", 408, 102,red);
-    cyclebig("blue-1", -22, 76,blue);
-    cyclebig("blue-2", 231, -11,blue);
-    cyclebig("blue-3", 421, 86,blue);
-})
-
+        window.onscroll = function() {
+            scrollnav();
+        }
+        imagechange("image-background");
+        imagechange("iphone");
+        carouseltab();
+        var red = [222, 81, 69];
+        var blue = [44, 191, 230];
+        cyclebig("red", 408, 102, red);
+        cyclebig("blue-1", -22, 76, blue);
+        cyclebig("blue-2", 231, -11, blue);
+        cyclebig("blue-3", 421, 86, blue);
+    })
+    /*
+    $(document).ready(function(){});
+    window.onload=function(){};
+    */
 function scrollnav() {
     var $nav = $(".mynav");
     var $brand = $(".brand-content");
@@ -22,7 +25,7 @@ function scrollnav() {
         $nav.stop(true);
         $brand.css("color", "black");
         $navright.css("color", "black");
-        $nav.css({ "background-color": "white","border-bottom":"1px solid #DCDCDC" }).animate({
+        $nav.css({ "background-color": "white", "border-bottom": "1px solid #DCDCDC" }).animate({
             height: 70,
             paddingTop: 10,
             paddingLeft: 40,
@@ -33,7 +36,7 @@ function scrollnav() {
         $nav.stop(true);
         $brand.css("color", "white");
         $navright.css("color", "white");
-        $nav.css({ "background-color": "transparent","border-bottom":"none" }).animate({
+        $nav.css({ "background-color": "transparent", "border-bottom": "none" }).animate({
             height: 120,
             paddingTop: 60,
             paddingLeft: 80,
@@ -43,7 +46,7 @@ function scrollnav() {
 }
 
 function imagechange(cl) {
-	cl="."+cl;
+    cl = "." + cl;
     var $img = $(cl).find("img");
     var counts = 0;
     $img.eq(0).css("opacity", "1");
@@ -58,10 +61,11 @@ function imagechange(cl) {
 }
 
 function carouseltab() {
-    var li = $(".carousel-head").find("li");
-    var liwidth = parseFloat(li.eq(0).css("width"));
-    var page = $(".showpage");
-    var list = $(".lists-a");
+    var li = $(".carousel-head").find("li"),
+        liwidth = parseFloat(li.eq(0).css("width")),
+        page = $(".showpage"),
+        list = $(".lists-a");
+
     for (i = 0; i < li.length; i++) {
         li.eq(i).css("left", i * liwidth);
     }
@@ -97,7 +101,7 @@ function carouseltab() {
 
 }
 
-function cyclebig(cl, x, y,color) {
+function cyclebig(cl, x, y, color) {
     cl = "." + cl;
     var canvas = $(cl).eq(0);
     console.log(color[0]);
@@ -105,14 +109,16 @@ function cyclebig(cl, x, y,color) {
         "left": x,
         "top": y,
     })
-    var ctx = canvas.get(0).getContext("2d");
+   // var ctx = canvas.get(0).getContext("2d");
+    var ctx = canvas[0].getContext("2d");
     var i = 1;
+
     function pant() {
         ctx.clearRect(0, 0, 400, 400);
         var speed = 5 - 0.03125 * i;
         for (j = 0; j < 5; j++) {
             ctx.beginPath();
-            ctx.strokeStyle = "rgba("+color[0]+","+color[1]+","+color[2]+"," + (0.7 - 0.02 * i) + ")";
+            ctx.strokeStyle = "rgba(" + color[0] + "," + color[1] + "," + color[2] + "," + (0.7 - 0.02 * i) + ")";
             ctx.arc(200, 200, 15 + 5 * j + speed * i, 0, Math.PI * 2, true);
             ctx.lineWidth = 1 + 0.05 * i;
             ctx.closePath();
